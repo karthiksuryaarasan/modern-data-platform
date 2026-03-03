@@ -1,7 +1,0 @@
-venv/
-__pycache__/
-*.pyc
-warehouse.duckdb
-raw_zone/
-ecommerce_dbt/target/
-ecommerce_dbt/dbt_packages/
