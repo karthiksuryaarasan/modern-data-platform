@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fact_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_users')
+              field: user_id
+
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_products')
+              field: product_id
+
+      - name: total_amount
+        tests:
+          - not_null

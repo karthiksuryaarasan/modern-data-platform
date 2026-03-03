@@ -1,0 +1,8 @@
+warehouse.duckdb
+target/
+dbt_packages/
+venv/
+__pycache__/
+*.csv
+*.parquet
+.env
